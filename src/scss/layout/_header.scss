@@ -1,5 +1,26 @@
-/* .page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
-} */
+.container{
+    background-color:$color-white;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2rem;
+  
+    &_li{
+    list-style: none;
+    margin: 0 1rem;
+    color: $color-text;
+    }
+
+    &_btn{
+      @include Button;  
+    }
+
+    &_btn::after{
+      content: "▶";
+      font-size: 0.8rem;
+      color: white;
+      margin-left:0.5rem;
+    }
+}
