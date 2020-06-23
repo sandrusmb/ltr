@@ -1,8 +1,21 @@
+.main{
+  border:1px solid red;
 
+  &_container{
+    border:1px solid blue,;
+    margin: 0 1rem;
 
-body {
-  padding: 2rem;
-  height: 100vh;
-  background-color: $color-background;
-  font-family: $font-main;
+    &_header{
+      height: 5rem;
+      background-color: $color-feature;
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      
+      &-img{
+      margin-right: 1rem;
+      }
+    }
+  }
 }
