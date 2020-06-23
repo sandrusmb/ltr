@@ -28,11 +28,16 @@
         display:flex;
         flex-direction: column;
         align-items: center;
-        border-right:0.3rem solid $color-white;
-        padding: 1rem;
+        border-right:0.5rem solid $color-white;
+        padding: 1rem 3rem;
 
         &-h1{
           text-align: justify;
+        }
+
+        &-p{
+          font-size:0.6rem;
+          text-align: center;
         }
        }
       
@@ -47,7 +52,7 @@
        
         &-input{
         padding:0.5rem;
-        width: 13rem;
+        width: 11.3rem;
         font-size: 0.5rem;
         margin: 0 0.5rem 0 0;
         }
@@ -55,6 +60,54 @@
         &-btn{
         @include Button;
         }
+      }
+    }
+
+    &_gallery{
+      display: flex;
+      flex-direction: row;
+      margin: 1rem 0;
+
+      &_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        background: $color-general;
+        margin:0.2rem;
+        padding: 0.3rem;
+
+        &:first-child{
+          background: $color-feature; 
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25),
+        4px 4px 10px rgba(0, 0, 0, 0.2);
+          margin:0.2rem 0.2rem 0.2rem 0;
+        }
+
+        &:last-child{
+          margin:0.2rem 0 0.2rem 0.2rem;
+        }
+
+        &-img{
+          height: 1.5rem;
+        }
+
+        &-p{
+        color:$color-white;
+        }
+      }
+    }
+
+    &_footer{
+      border-bottom:0.1rem solid $color-background;
+
+      &-p{
+        margin-bottom:1rem;
+      }
+
+      &-span{
+        color: $color-btn;
       }
     }
   }
