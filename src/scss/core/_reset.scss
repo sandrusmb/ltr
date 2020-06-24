@@ -8,6 +8,12 @@ body{
   font-size: 62.5%;
   font-family: $font-main;
   line-height: 1rem;
+  background-color: $color-background;
+}
+
+.page{
+  background-color: $color-white;
+  margin: 0 1rem;
 }
 
 

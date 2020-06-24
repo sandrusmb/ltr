@@ -139,13 +139,11 @@
 
           &-img{
             width: 1rem;
-            height: 1rem;
-            
+            height: 1rem; 
           }
 
           &-p{
             margin: 0 0.5rem;
-           
           }
         }
       }
@@ -182,7 +180,6 @@
       }
 
       &_demo{
-        border:1px solid red;
         display:flex;
         flex-direction:row;
         align-items: flex-start;
@@ -191,8 +188,13 @@
         font-weight: bold;
         padding: 1rem;
 
+        &-description{
+          margin-right: 2rem;
+        }
+
         &-cta{
          color:$color-btn;
+         margin-right: 0.3rem;
         }
 
         &-tv{

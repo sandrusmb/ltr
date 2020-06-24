@@ -1,8 +1,35 @@
-/* .page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
-} */
+.footer{
+  @include Navegator;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: $color-background;
+
+  &_menu{
+    list-style: none;
+    display:flex;
+    flex-direction:row;
+    margin:1rem 0;
+
+    &-element{
+      @include Item;
+    }
+  }
+
+  &_terms{
+    text-align: right;
+
+    &_div{
+      display: flex;
+      flex-direction: row;
+      color:$color-feature;
+
+      &-p{
+        margin-left:0.3rem;
+      }
+    }
+
+    &_copyright{
+      color:$color-text;
+    }
+  }
+}
