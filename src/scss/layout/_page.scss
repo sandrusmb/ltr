@@ -1,7 +1,9 @@
 .main{
-
+  margin: 0 2rem;
+ 
   &_container{
-    margin: 0 2rem;
+
+   /*  BLOQUE 1 */
 
     &_header{
       background-color: $color-feature;
@@ -15,6 +17,8 @@
       }
     }
 
+     /*  BLOQUE 2 */
+
     &_body{
       display:flex;
       flex-direction: row;
@@ -23,32 +27,22 @@
       border-top:0.3rem solid $color-white;
       background-color: $color-background;
 
-
       &_title{     
         display:flex;
         flex-direction: column;
         align-items: center;
         border-right:0.5rem solid $color-white;
         padding: 1rem 3rem;
-
-        &-h1{
-          text-align: justify;
-        }
-
-        &-p{
-          font-size:0.6rem;
-          text-align: center;
-        }
+        flex-grow: 5;
        }
       
       &_form{
         display:flex;
         flex-direction: row;
-        flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
-        background-color: $color-background;
         padding: 0 1rem;
+        flex-grow: 5;
        
         &-input{
         padding:0.5rem;
@@ -63,10 +57,14 @@
       }
     }
 
+     /*  BLOQUE 3 */
+
     &_gallery{
       display: flex;
       flex-direction: row;
+      flex-wrap: nowrap;
       margin: 1rem 0;
+    
 
       &_box{
         display: flex;
@@ -99,6 +97,8 @@
       }
     }
 
+     /*  BLOQUE 4 */
+
     &_footer{
       border-bottom:0.1rem solid $color-background;
 
@@ -108,6 +108,97 @@
 
       &-span{
         color: $color-btn;
+      }
+    }
+  }
+
+  &_aside{
+    
+    display:flex;
+    flex-direction: row;
+    margin-top:1rem;
+
+    &_user{
+      padding:1rem;
+      background-color: $color-general;
+      margin: 1rem 0.3rem 1rem 0;
+      
+      color: $color-white;
+      flex-grow: 5;
+   
+
+      &_options{
+        display:flex;
+        flex-direction:row;
+  
+        &-icon{
+          display:flex;
+          flex-direction:row;
+          margin: 0.5rem 1rem 0.5rem 0;
+     
+
+          &-img{
+            width: 1rem;
+            height: 1rem;
+            
+          }
+
+          &-p{
+            margin: 0 0.5rem;
+           
+          }
+        }
+      }
+    }
+
+    /*  BLOQUE 5 */
+
+    &_status{
+     
+      padding:1rem;
+      background-color: $color-background;
+      margin: 1rem 0 1rem 0.3rem;
+      color: $color-white;
+      flex-grow: 5;
+
+      &_help{
+      
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+       
+        &-h1{
+          color:$color-feature;
+          font-size: 1rem;
+        }
+
+        &-cube{
+          width: 1rem;
+          height: 1rem;
+          background-color: $color-feature;
+         text-align: center;
+        }
+      }
+
+      &_demo{
+        border:1px solid red;
+        display:flex;
+        flex-direction:row;
+        align-items: flex-start;
+        background-color: $color-white;
+        color: $color-text;
+        font-weight: bold;
+        padding: 1rem;
+
+        &-cta{
+         color:$color-btn;
+        }
+
+        &-tv{
+          width: 1rem;
+          height: 1rem;
+         }
       }
     }
   }
