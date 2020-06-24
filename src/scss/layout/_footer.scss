@@ -22,9 +22,18 @@
       display: flex;
       flex-direction: row;
       color:$color-feature;
+      
+      &-span{
+        margin:0 0.2rem;
+      }
 
       &-p{
-        margin-left:0.3rem;
+        cursor: pointer;
+        &:hover{
+          transition: font-weight color ease 0.5s;
+          font-weight: bold;
+          color:$color-general;
+        }
       }
     }
 
