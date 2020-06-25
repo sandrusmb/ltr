@@ -1,8 +1,10 @@
 .footer{
+
   @include Navegator;
   justify-content: space-between;
   align-items: baseline;
   background-color: $color-background;
+  margin-bottom: 1rem;
 
   &_menu{
     list-style: none;

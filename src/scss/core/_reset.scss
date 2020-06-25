@@ -9,6 +9,11 @@ body{
   font-family: $font-main;
   line-height: 1rem;
   background-color: $color-background;
+  margin:auto;
+
+  @media (min-width:952px){
+    width: 952px;
+  }
 }
 
 .page{
