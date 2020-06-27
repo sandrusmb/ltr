@@ -291,24 +291,28 @@
           }
         }
 
-        &-cta{
-        
-         color:$color-btn;
-         margin-right: 0.3rem;
+        &_cta{
 
-         @media (min-width: 800px){
-          margin-left: 1rem;
-          text-align: right;
-        }
-        }
+          display:flex;
+          flex-direction: row-reverse;
+       
 
-        &-tv{
-          width: 1rem;
-          height: 1rem;
-         }
+          &-p{
+            color:$color-btn;
+            margin-left: 0.3rem;
+ 
+          @media (min-width: 800px){
+            margin-left: 1rem;
+           text-align: right;
+          }
+          }
+ 
+          &-tv{
+            height: 1rem;
+          }
+        } 
+
       }
     }
   }
-
-
 }
