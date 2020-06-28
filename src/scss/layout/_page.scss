@@ -39,7 +39,6 @@
         border-right:0.4rem solid $color-white;
         padding: 1rem 3rem;
         flex-grow: 5;
-      
        }
       
       &_form{
@@ -60,7 +59,6 @@
 
         &-btn{
         @include Button;
-
         }
       }
     }
@@ -82,6 +80,8 @@
         background: $color-general;
         margin:0.2rem;
         padding: 0.3rem;
+        cursor: pointer;
+        
 
         &:first-child{
           background: $color-feature; 
@@ -92,6 +92,18 @@
 
         &:last-child{
           margin:0.2rem 0 0.2rem 0.2rem;
+        }
+
+        &:hover{
+            animation: rotate 3s infinite;
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running; 
         }
 
         &-img{
@@ -127,11 +139,9 @@
       max-width: 30%;
     }
    
-
     @media all and (min-width: 700px){
       flex-direction: column;
       margin:0 0 0 1rem;
-
     }
 
     &_user{
@@ -163,6 +173,7 @@
    
 
       &_options{
+        
         display:flex;
         flex-direction:row;
 
@@ -175,31 +186,34 @@
         }
   
         &-icon{
+        
           display:flex;
           flex-direction:row;
           margin: 0.5rem 1rem 0.5rem 0;
+          cursor: pointer;
+
+          &:hover{
+            font-weight: bold;
+          }
      
           &-img{
             width: 1rem;
-            height: 1rem; 
+            height: 1rem;
           }
 
           &-p{
-            margin: 0 0.5rem;
+            margin: 0 0.5rem; 
           }
         }
       }
     }
 
     &_status{
-      
       padding:1rem;
       background-color: $color-background;
       color: $color-white;
       
-
       &_help{
-        
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -214,12 +228,12 @@
           width: 1rem;
           height: 1rem;
           background-color: $color-feature;
-         text-align: center;
+          text-align: center;
+          cursor: pointer;
         }
       }
 
       &_demo{
-    
         display:flex;
         flex-direction:row;
         align-items: flex-start;
@@ -249,23 +263,41 @@
         &_cta{
           display:flex;
           flex-direction: row-reverse;
-       
+         
           &-p{
             color:$color-btn;
             margin-left: 0.3rem;
+            cursor: pointer;
+
+            &:hover{
+              color: $color-general;
+            }
  
           @media (min-width: 800px){
             margin-left: 1rem;
-           text-align: right;
+            text-align: right;
           }
           }
  
           &-tv{
             height: 1rem;
+            cursor: pointer;
+
+            &:hover{
+              border-radius: 100%;
+            }
           }
         } 
-
       }
     }
+  }
+}
+
+@keyframes rotate {
+  0%, 100% {
+  transform: rotate(10deg);
+  }
+  50% {
+  transform: rotate(-10deg);
   }
 }
