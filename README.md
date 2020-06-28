@@ -53,12 +53,3 @@ To make the code easier, I have divided the elements of the web and created part
 I have also created a mixins file with the styles of those elements that are most repeated on the web, such as the buttons or the navigation bar, a reset file with the basics styles and a variables file with the colors and fonts.
 
 I added some animations to the buttons and the navigation bar to make the user experience more dynamic.
-
-
-## Observations
-
-I have really enjoyed and learned doing this exercise. I know there are things to improve but I am proud of the code.
-
-I am a diamond in the rough and, although I have a lot to polish, I have talent, I am constant and hard-worker. I hope you consider it for the position.
-
-Thank you!
