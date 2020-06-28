@@ -46,7 +46,7 @@ src
 
 ## Decisions
 
-I created a responsive website designed to be used on mobile (horizontally), iPad and computer. I have used HTML5, CSS3, Sass, SCSS and Git to carry out the project and the first thing I did was the code to the left to right direction.
+I created a responsive website design to be used on mobile (horizontally), iPad and computer. I have used HTML5, CSS3, Sass, SCSS and Git to carry out the project and the first thing I did was the code to the left to right direction.
 
 To make the code easier, I have divided the elements of the web and created partials of HTML and SCSS, so I have separated the header, the central part of the web (that would be a main section and a aside) and the footer.
 
